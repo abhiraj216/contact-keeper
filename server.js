@@ -5,9 +5,9 @@ const app = express();
 //connects DataBase
 connectDB();
 
-app.get("/", (req, res) =>
-  res.json({ msg: "Welcome to Contactkeeper API...." })
-);
+// app.get("/", (req, res) =>
+//   res.json({ msg: "Welcome to Contactkeeper API...." })
+// );
 //Initialise Middlewware
 app.use(express.json({extended: false})); // by doing that we can accept the data from users by mongodb
 
